@@ -1,2 +1,2 @@
-# catchPx
+# catchPX
 Pong-Game
