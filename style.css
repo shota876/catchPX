@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(61, 59, 59);
+}
+
+:root{
+    --desk-1Left: 50px;
+    --desk-1Top: 65%;
+    --desk-2right: 50px;
+    --desk-2Top: 20%;
+
+    --ball-left: 450px;
+    --ball-top: 40%;
+
+    --leftScoreLeft: 30px;
+    --leftScoreTop: 90px;
+    --rightScoreRight: 30px;
+    --rightScoreTop: 90px;
+}
+
+
+
+.game{
+    width: 1000px;
+    height: 450px;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.desk-1{
+    position: absolute;
+    width: 10px;
+    height: 70px;
+    background-color: aqua;
+    left: var(--desk-1Left);
+    top: var(--desk-1Top);
+}
+
+.desk-2{
+    position: absolute;
+    width: 10px;
+    height: 70px;
+    background-color: aqua;
+    right: var(--desk-2right);
+    top: var(--desk-2Top);
+}
+
+.ball{
+    background-color: white;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 40px;
+    top: var(--ball-top);
+    left: var(--ball-left);
+}
+
+.top-wall{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5px;
+    border: 1px solid red;
+}
+.bottom-wall{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5px;
+    border: 1px solid red;
+}
+.left-wall{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.5px;
+    height: 100%;
+    border: 1px solid red;
+}
+.right-wall{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.5px;
+    height: 100%;
+    border: 1px solid red;
+}
+.game-over{
+    color: white;
+    font-size: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 200px;
+    position: absolute;
+    display: none;
+}
+
+.left-score{
+    color: white;
+    position: absolute;
+    left: var(--leftScoreLeft);
+    top: var(--leftScoreTop);
+}
+.right-score{
+    color: white;
+    position: absolute;
+    right: var(--rightScoreRight);
+    top: var(--rightScoreTop);
+}
+.play{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    cursor: pointer;
+    display: block;
+}
+.start-again{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
+    display: none;
+}
+
