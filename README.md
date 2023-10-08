@@ -1,2 +1,2 @@
 # catchPX
-Pong-Game
+Simple Pong Game with JavasCript
